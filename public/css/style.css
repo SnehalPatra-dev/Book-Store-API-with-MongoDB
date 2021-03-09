@@ -1,0 +1,117 @@
+.login-container{
+    width: 380px;
+    height: fit-content;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.firstbody{
+    background-image: url('/images/bookImage1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondbody{
+    background-image: url('/images/bookImage2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thirdbody{
+    background-image: url('images/bookImage3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.container{
+    background-color: #fff3cd;
+}
+
+.sidenav{
+    background-color: #fff3cd;
+    font-size: x-large;
+}
+
+.signup1{
+    background-color: #b68973;
+    align-content: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+    color:#4a3933;
+    font-size: large;
+    border: whitesmoke;
+    border-radius: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.signup1:hover{
+    background-color: #f6eedf;
+    align-content: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+    color:#4a3933;
+    font-size: large;
+    border:#4a3933 solid;
+    border-radius: 25%;
+    width: 150px;
+    height: 45px;
+}
+
+.heading1{
+    font-family: 'Pacifico',cursive;
+    color: #4a3933;
+}
+
+.heading2{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #4a3933;
+    font-size: large;
+
+}
+
+.heading3{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #4a3933;
+    font-size: x-large;
+}
+
+.specialheading1{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #4a3933;
+    margin-left: 0.8%;
+}
+
+.marginPoint8{
+    margin-left: 0.8%;
+}
+
+
+.btn-float{
+    float: left;
+    margin-right: 12px;
+}
+.img-small{
+    width: 180px;
+}
+
+.card-content{
+    width: 380px;
+    background-color: #fdf1d6;
+
+}
+.striped{
+    align-content: center;
+    background-color: #fdf1d6;
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+    font-size: large;
+    text-align: center;
+    color: #4a3933;
+    margin-left: 0.8%;
+    border: #4a3933;
+    border-radius: 20%;
+}
+.brand-logo{
+    font-family: 'Pacifico',cursive;
+}
