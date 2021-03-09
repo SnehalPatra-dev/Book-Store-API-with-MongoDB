@@ -1,0 +1,19 @@
+Command to install the necessary tools to start the project:
+
+npm install express mongoose connect-mongo express-session express-handlebars dotenv method-override moment morgan passport passport-google-oauth20
+
+
+Command to install nodemon so that we don't have to refresh the server everytime:
+ npm install -D nodemon cross-env
+
+ Manipulate "scripts" in file package.json as follows:
+   "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+  } 
+
+  To run application in development mode (nodemon will automatically get activated):
+  npm run dev <enter>
+
+  To run application in production mode:
+  npm start <enter>
