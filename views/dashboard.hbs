@@ -1,0 +1,45 @@
+<h2 class="specialheading1">Dashboard</h2>
+<h3 class="specialheading1">Hello {{name}}! Welcome to the Reader's Zone!</h3>
+
+<!-- Receiving name from routes/index.js -->
+
+<p class="heading3 marginPoint8"> Here are the available books to read:</p>
+
+{{#if books}}
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date and Time</th>
+            <th>Book Privacy</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each books}}
+        <tr>
+            <td><a href="/books/{{_id}}">{{title}}</a></td>
+            <td>{{createdAt}}</td>
+            <td><span class="dash-status">{{status}}</span></td>
+            <td>
+                <a href="/books/edit/{{_id}}" class="btn btn-float">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <br> <br>
+                <form action="/books/{{_id}}" method="POST" id="delete-form">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn red">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
+
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+
+</table>
+{{else}}
+<p class="heading3"> No books available. </p>
+{{/if}}

@@ -1,0 +1,31 @@
+<!-- Purpose is to display all the public books in this route-->
+<h1 class="specialheading1">Available Books</h1>
+<div class="row">
+    {{#each books}}
+    <!-- Loop for accessing each book user -->
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image">
+                {{{editIcon user ../user _id}}}
+                <!-- ../user means to go up one level and grab the loggedIn user  -->
+                <!-- Note that _id is the book ID. We don't need to explicitly mention that as we are already inside the loop -->
+                <!-- We use triple curly braces when we want to parse HTML with handlebars -->
+            </div>
+            <div class="card-content center-align">
+                <h5 class="specialheading1">{{title}}</h5>
+                <p>{{stripTags (truncate body 150)}}</p>
+                <br>
+                <div class="chip">
+                    <img src="{{user.image}}" alt="">
+                    <a href="/books/user/{{user._id}}">{{user.displayName}}</a>
+                </div>
+            </div>
+            <div class="card-action center-align">
+                <a href="/books/{{_id}}" class="btn brown">Read More</a>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <p class="heading3">No books to display</p>
+    {{/each}}
+</div>
